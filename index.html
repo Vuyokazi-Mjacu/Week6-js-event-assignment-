@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Interactive To-Do List</h1>
+
+    <!-- Task Input Form -->
+    <form id="todo-form">
+        <input type="text" id="task-input" placeholder="Add a new task" required>
+        <input type="date" id="due-date" required>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <input type="password" id="password" placeholder="Enter password" required>
+        <button type="submit">Add Task</button>
+        <div id="error-message"></div>
+    </form>
+
+    <!-- To-Do List Display -->
+    <ul id="todo-list"></ul>
+
+    <h2>Task Filters:</h2>
+    <button id="toggle-completed">Show/Hide Completed</button>
+    
+    <div id="task-image-gallery">
+        <h3>Task Image Gallery</h3>
+        <img src="task1.jpeg" alt="Task 1" class="task-image">
+        <img src="task2.jpeg" alt="Task 2" class="task-image">
+        <img src="task3.jpeg" alt="Task 2" class="task-image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
